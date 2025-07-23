@@ -63,7 +63,7 @@ BRD → PRDs with User Stories → System Architecture (ADRs) → SRDs → Imple
 │       └── sql-*.instructions.md
 ├── chatmodes/                  # Custom Copilot chat modes
 │   ├── greenfield-development.chatmode.md
-│   ├── add-feature.chatmode.md
+│   └── add-feature.chatmode.md
 └── prompts/                    # Reusable prompt templates
     ├── task-generation.prompt.md
     └── task-execution.prompt.md

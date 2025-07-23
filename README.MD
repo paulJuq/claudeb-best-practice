@@ -66,7 +66,7 @@ BRD → PRDs with User Stories → System Architecture (ADRs) → SRDs → Imple
 │   ├── add-feature.chatmode.md
 └── prompts/                    # Reusable prompt templates
     ├── task-generation.prompt.md
-    ├── task-execution.prompt.md
+    └── task-execution.prompt.md
 ```
 
 ## 🛠️ Development Workflows

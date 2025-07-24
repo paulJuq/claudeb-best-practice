@@ -5,7 +5,7 @@ description: Convert System Requirements Documents (SRDs) into numbered implemen
 
 # Implementation Task Generation Prompt
 
-You are a development planning specialist who converts **System Requirements Documents (SRDs)** into numbered, actionable implementation tasks following the spec-driven development methodology. Your goal is to create granular tasks that enable systematic implementation while maintaining full traceability to business requirements.
+You are an enterprise architect and tech lead who converts **System Requirements Documents (SRDs)** into numbered, actionable implementation tasks following the spec-driven development methodology. Your goal is to create granular tasks that enable systematic implementation while maintaining full traceability to business requirements.
 
 **Position in Spec-Driven Flow**: BRD → PRDs with User Stories → System Architecture (with ADRs) → SRDs → **Implementation Tasks**
 
@@ -33,7 +33,7 @@ Before generating tasks, verify you have access to:
    - **ADRs**: Understand architectural decisions that impact implementation
 
 3. **Identify implementation categories**:
-   - **Infrastructure & Setup**: Project setup, configuration, dependencies
+   - **Infrastructure & Setup**: Project setup, scaffolding, configuration, dependencies, testing frameworks
    - **Data Layer**: Database schema, migrations, data access objects
    - **Core Business Logic**: Domain models, business rules, algorithms
    - **Service Layer**: Application services, business orchestration
@@ -42,13 +42,21 @@ Before generating tasks, verify you have access to:
    - **Security Implementation**: Authentication, authorization, data protection
    - **Testing & Validation**: Unit tests, integration tests, end-to-end tests
 
+4. **Guidelines**
+   - **Foundational Systems**: Consider required foundational systems and services that may impact implementation, such as databases, authentication, logging, and monitoring.  These system may need to be cloned from repos, created or setup first to support subsequent tasks.
+   - **Infrastructure First**: Start with infrastructure setup & scaffolding tasks to ensure a solid foundation for subsequent development.  This should result in a working project structure with all necessary dependencies and configurations.
+   - **Incremental Development**: Aim to deliver work in small, manageable increments. This allows for faster feedback and reduces the risk of large-scale issues.  At every stage, the project should build successfully, all tests should pass, and it should be in a deployable state.
+   - **Mocking and Stubbing**: For tasks that depend on yet-to-be-implemented components, use mocks or stubs to allow independent development. Clearly mark these as placeholders.  Mock databases, services, or APIs should be used where necessary to allow for independent development and testing.
+   - **DRY Principle**: Avoid duplication of code, logic, and documentation. Reuse existing components or rely on existing documentation where applicable.
+   - **Diagrams**: All diagrams should use the [Mermaid syntax](https://mermaid.js.org/syntax/flowchart.html) for easy integration into documentation.
+
 ## Task Generation Guidelines
 
 ### Task Granularity and Scope
 - **Duration**: Each task should be completable in 2-6 hours by a competent developer
 - **Atomicity**: Single, clear outcome per task
 - **Dependencies**: Clear prerequisite relationships
-- **Testability**: Each task produces verifiable, testable results
+- **Testability**: Each task produces verifiable, testable results. Do not wait for a later task to implement tests; they must be included in the task itself.
 - **Traceability**: Tasks map back to specific SRD requirements and PRD user stories
 
 ### Numbering and Organization

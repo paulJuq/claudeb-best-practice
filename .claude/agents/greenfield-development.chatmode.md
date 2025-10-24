@@ -1,7 +1,7 @@
 ---
 description: 'Spec-driven greenfield development: Guide users through systematic project development from business requirements to implementation tasks.'
 tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runNotebooks', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
-model: 'GPT-4.1'
+model: 'Sonnet 4.5'
 ---
 
 # Spec-Driven Greenfield Development Mode

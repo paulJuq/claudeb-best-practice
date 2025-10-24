@@ -1,7 +1,9 @@
 ---
 description: Workflow for creating comprehensive Product Requirements Documents (PRDs) as part of spec-driven development
 applyTo: "**/docs/**/*.md,**/product-requirements/**/*.md,**/prd-*.md"
----### Writing Guidelines
+---
+
+### Writing Guidelines
 
 ### Diagram Requirements Summary
 

@@ -1,6 +1,6 @@
-# GitHub Copilot Best Practices & Spec-Driven Development
+# Claude Code Best Practices & Spec-Driven Development
 
-This repository provides a comprehensive framework for maximizing GitHub Copilot's effectiveness through **spec-driven development methodology**. It includes customized instructions, chatmodes, and prompts that guide systematic development from business requirements to implementation.
+This repository provides a comprehensive framework for maximizing Claude Code's effectiveness through **spec-driven development methodology**. It includes customized instructions, chatmodes, and prompts that guide systematic development from business requirements to implementation.
 
 ## 🎯 Overview
 
@@ -55,7 +55,7 @@ BRD → PRDs with User Stories → System Architecture (ADRs) → SRDs → Imple
 
 ```
 ├── .github/
-│   └── instructions/           # GitHub Copilot instruction files
+│   └── instructions/           # Claude Code instruction files
 │       ├── security-owasp.instructions.md
 │       ├── spec-workflow-*.instructions.md
 │       ├── tech-*.instructions.md
@@ -211,11 +211,11 @@ When contributing to this repository:
 
 ## 📚 Resources
 
-- **GitHub Copilot Documentation**: [Official GitHub Copilot Docs](https://docs.github.com/en/copilot)
+- **Claude Code Documentation**: [Official Claude Code Docs](https://docs.github.com/en/copilot)
 - **Spec-Driven Development**: Internal methodology documentation in `/instructions/spec-workflow-*`
 - **Code Quality**: Language and framework-specific standards in `/instructions/tech-*`
 - **Security Guidelines**: OWASP-based security practices in `/instructions/security-*`
 
 ---
 
-**Get Started**: Clone this repository, use the `greenfield-development` chatmode, and begin building better software with GitHub Copilot!
+**Get Started**: Clone this repository, use the `greenfield-development` chatmode, and begin building better software with Claude Code!

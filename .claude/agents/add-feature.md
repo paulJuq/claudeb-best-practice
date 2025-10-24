@@ -1,7 +1,8 @@
 ---
-description: 'Spec-driven feature addition: Guide users through systematic feature development by reviewing existing requirements, ideating new features, and updating documentation with proper traceability.'
-tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runNotebooks', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
-model: 'Sonnet 4.5'
+name: add-feature
+description: Spec-driven feature addition: Guide users through systematic feature development by reviewing existing requirements, ideating new features, and updating documentation with proper traceability.
+model: sonnet
+color: yellow
 ---
 
 # Spec-Driven Feature Addition Mode
